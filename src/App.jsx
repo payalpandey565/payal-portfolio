@@ -1341,7 +1341,7 @@ function App() {
                   {/* Cognizant logo with text fallback */}
                   <div className="flex min-h-14 min-w-14 items-center justify-center rounded-2xl border border-white/15 bg-white/[0.95] px-3 py-2 shadow-lg shadow-black/10">
                     <img
-                      src="public/cognizant-logo.png"
+                      src="/cognizant-logo.png"
                       alt="Cognizant logo"
                       className="h-auto w-28 object-contain"
                     />
