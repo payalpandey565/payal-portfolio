@@ -12,6 +12,9 @@ import {
   Cloud,
   Code2,
   Database,
+  Download,
+  ArrowDownToLine,
+  FileText,
   Mail,
   Menu,
   Network,
@@ -1727,8 +1730,9 @@ function App() {
                   something interesting, I'd love to connect.
                 </p>
 
-                {/* Contact actions */}
+                {/* Contact and resume actions */}
                 <div className="mt-9 flex flex-wrap gap-3">
+                  {/* Email */}
                   <a
                     href="mailto:payalpandey56p@gmail.com"
                     className="group inline-flex items-center gap-2.5 rounded-xl bg-gradient-to-r from-cyan-300 to-teal-600 px-6 py-3.5 text-sm font-semibold text-[#071018] shadow-[0_0_30px_rgba(45,212,191,0.12)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_35px_rgba(45,212,191,0.25)]"
@@ -1741,6 +1745,7 @@ function App() {
                     />
                   </a>
 
+                  {/* LinkedIn */}
                   <a
                     href="https://www.linkedin.com/in/payal-pandey-839a64253/"
                     target="_blank"
@@ -1754,6 +1759,16 @@ function App() {
                       className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                     />
                   </a>
+
+                  {/* Download Resume */}
+                  <a
+                    href="/Payal_Pandey_Resume.pdf"
+                    download="Payal_Pandey_Resume.pdf"
+                    className="group inline-flex items-center gap-2.5 rounded-xl border border-violet-300/25 bg-violet-300/[0.07] px-6 py-3.5 text-sm font-semibold text-violet-100 transition duration-300 hover:-translate-y-0.5 hover:border-violet-300/50 hover:bg-violet-300/[0.12]"
+                  >
+                    <Download size={17} />
+                    Download Resume
+                  </a>
                 </div>
               </div>
 
@@ -1762,6 +1777,7 @@ function App() {
                 <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-cyan-400/[0.08] via-transparent to-violet-400/[0.08] blur-2xl" />
 
                 <div className="relative overflow-hidden rounded-2xl border border-white/[0.09] bg-slate-950/70 p-6 backdrop-blur-xl sm:p-7">
+                  {/* Card heading */}
                   <div className="flex items-center justify-between border-b border-white/[0.07] pb-5">
                     <div>
                       <p className="text-xs text-slate-500">CONTACT CARD</p>
@@ -1775,7 +1791,9 @@ function App() {
                     </div>
                   </div>
 
+                  {/* Contact details */}
                   <div className="space-y-5 py-6">
+                    {/* Email */}
                     <a
                       href="mailto:payalpandey56p@gmail.com"
                       className="group flex items-start gap-3"
@@ -1792,6 +1810,7 @@ function App() {
                       </div>
                     </a>
 
+                    {/* LinkedIn */}
                     <a
                       href="https://www.linkedin.com/in/payal-pandey-839a64253/"
                       target="_blank"
@@ -1811,8 +1830,32 @@ function App() {
                         </p>
                       </div>
                     </a>
+
+                    {/* Resume */}
+                    <a
+                      href="/Payal_Pandey_Resume.pdf"
+                      download="Payal_Pandey_Resume.pdf"
+                      className="group flex items-center gap-3"
+                    >
+                      <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-violet-300/[0.07] text-violet-200 transition group-hover:bg-violet-300/[0.12]">
+                        <FileText size={16} />
+                      </div>
+
+                      <div className="min-w-0 flex-1">
+                        <p className="text-xs text-slate-500">Resume</p>
+                        <p className="mt-1 text-sm text-slate-200 transition group-hover:text-violet-200">
+                          View my professional profile
+                        </p>
+                      </div>
+
+                      <Download
+                        size={16}
+                        className="shrink-0 text-slate-500 transition group-hover:text-violet-200"
+                      />
+                    </a>
                   </div>
 
+                  {/* Focus areas */}
                   <div className="rounded-xl border border-white/[0.06] bg-white/[0.025] p-4">
                     <p className="text-xs leading-6 text-slate-400">
                       Interested in data engineering, cloud data platforms, data
@@ -1820,9 +1863,12 @@ function App() {
                     </p>
                   </div>
 
-                  <div className="mt-5 flex items-center justify-between text-[10px] tracking-wider text-slate-600">
+                  {/* Footer */}
+                  <div className="mt-5 flex items-center justify-between gap-3 text-[10px] tracking-wider text-slate-600">
                     <span>HYDERABAD, INDIA</span>
-                    <span>AVAILABLE FOR CONNECTIONS</span>
+                    <span className="text-right">
+                      AVAILABLE FOR CONNECTIONS
+                    </span>
                   </div>
                 </div>
               </div>
